@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int a = 0;
+int b = 0;
+int c = 0;
+int d = 0;
+
+int main() {
+    printf("Lutfen ilk sayiyi giriniz: \n");
+    scanf("%d", &a);
+
+    printf("Lutfen ikinci sayiyi giriniz: \n");
+    scanf("%d", &b);
+
+    printf("Lutfen ucuncu sayiyi giriniz: \n");
+    scanf("%d", &c);
+
+    if (a > b) {
+        d = a;
+        a = b;
+        b = d;
+    }
+
+    if (a > c) {
+        d = a;
+        a = c;
+        c = d;
+    }
+
+    if (b > c) {
+        d = b;
+        b = c;
+        c = d;
+    }
+
+    printf("Kucukten buyuge siralama: %d %d %d\n", a, b, c);
+
+    return 0;
+}
