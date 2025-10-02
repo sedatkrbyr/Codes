@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int a = 0;
+
+
+int main()
+{
+    printf("Sayiyi giriniz:\n");
+    scanf("%int", &a);
+
+    if(a>0)
+    {
+        printf("Girdiginiz sayinin degeri pozitiftir.");
+    }
+
+    else if(a<0)
+    {
+        printf("Girdiginiz sayinin degeri negatiftir.");
+    }
+
+    else
+        printf("Girdiginiz sayinin degeri 0'dir.");
+    return 0;
+}
