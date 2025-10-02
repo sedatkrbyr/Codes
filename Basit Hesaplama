@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    float a, b;
+
+    printf("Lutfen islem yapacaginiz ilk sayinizi giriniz: \n");
+    scanf("%f", &a);
+
+    printf("Lutfen islem yapacaginiz ikinci sayinizi giriniz: \n");
+    scanf("%f", &b);
+
+    printf("Toplama isleminin sonucu: %.2f\n", a + b);
+    printf("Cikarma isleminin sonucu: %.2f\n", a - b);
+
+    if (b != 0) {
+        printf("Bolme isleminin sonucu: %.2f\n", a / b);
+    } else {
+        printf("Girdiginiz sayılarla bole islemini gerceklestiremiyoruz.\n");
+    }
+
+    printf("Carpma isleminin sonucu: %.2f\n", a * b);
+
+    return 0;
+}
